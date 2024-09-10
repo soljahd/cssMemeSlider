@@ -35,11 +35,21 @@ body {
     transition: 0.5s;
 }
 
+.slider__title-window {
+    display: flex;
+    width: calc(60vw - 10.3rem);
+    height: 2.4rem;
+    margin-right: auto;
+    overflow: hidden;
+}
+
 .slider__title {
+    display: block;
     align-self: center;
+    min-width: 100%;
     color: white;
     font-size: 1.2em;
-    margin-right: auto;
+    transition: 0.5s;
 }
 
 .slider__button {
@@ -92,5 +102,21 @@ body {
 }
 
 #page4:checked~.slider__window .slider__image_img1 {
+    margin-left: -300%;
+}
+
+#page1:checked~.slider__title-window .slider__title_tl1 {
+    margin-left: 0;
+}
+
+#page2:checked~.slider__title-window .slider__title_tl1 {
+    margin-left: -100%;
+}
+
+#page3:checked~.slider__title-window .slider__title_tl1 {
+    margin-left: -200%;
+}
+
+#page4:checked~.slider__title-window .slider__title_tl1 {
     margin-left: -300%;
 }
