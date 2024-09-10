@@ -13,25 +13,71 @@ body {
 }
 
 .slider {
-    width: 60%;
-    height: 40%;
+    width: 60vw;
+    height: 45vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-    align-items: center;
+    align-content: center;
 }
 
 .slider__window {
+    display: flex;
     width: 100%;
     height: 80%;
+
+    margin-bottom: 4%;
+    overflow: hidden;
+}
+
+.slider__image {
     border-radius: 1rem;
-    background-color: red;
+    height: 100%;
 }
 
 .slider__title {
+    align-self: center;
     color: white;
+    font-size: 1.2em;
 }
 
 .slider__page-buttons {
+    display: flex;
     margin-left: auto;
 }
+
+.slider__button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0.16em solid #5252db;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    background: #5252db;
+    transition: 0.2s all linear;
+    margin: 0;
+}
+
+.slider__button:checked {
+    background: transparent;
+    border: 0.16em solid #5262db;
+}
+
+.slider__button:hover {
+    background: #d4d4e2;
+    border: 0.16em solid #d4d4e2;
+}
+
+.slider__button:checked:hover {
+    background: transparent;
+    border: 0.16em solid #d4d4e2;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
