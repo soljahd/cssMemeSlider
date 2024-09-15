@@ -87,6 +87,11 @@ body {
     height: 2.4rem;
     order: 1;
     margin-right: 0.7rem;
+    cursor: pointer;
+}
+
+.slider__button-label:last-of-type {
+    margin-right: 0;
 }
 
 #page1:checked~.slider__window .slider__image_img1 {
