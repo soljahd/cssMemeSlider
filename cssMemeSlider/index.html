@@ -6,10 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemeSlider</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/favicon.ico">
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="slider">
 
+            <input class="slider__button" type="radio" name="pages" id="page1" checked>
+            <label class="slider__button-label" for="page1"></label>
+            <input class="slider__button" type="radio" name="pages" id="page2">
+            <label class="slider__button-label" for="page2"></label>
+            <input class="slider__button" type="radio" name="pages" id="page3">
+            <label class="slider__button-label" for="page3"></label>
+            <input class="slider__button" type="radio" name="pages" id="page4">
+            <label class="slider__button-label" for="page4"></label>
+
+            <div class="slider__window">
+                <img class="slider__image slider__image_img1" src="./assets/img1.webp" alt="meme1">
+                <img class="slider__image slider__image_img2" src="./assets/img2.webp" alt="meme2">
+                <img class="slider__image slider__image_img3" src="./assets/img3.webp" alt="meme3">
+                <img class="slider__image slider__image_img4" src="./assets/img4.webp" alt="meme4">
+            </div>
+
+            <div class="slider__title-window">
+                <span class="slider__title slider__title_tl1">I'm fine, jobs done</span>
+                <span class="slider__title slider__title_tl2">I'm always young</span>
+                <span class="slider__title slider__title_tl3">Ok, tell me how you good feeling</span>
+                <span class="slider__title slider__title_tl4">Time for lunch, go fast</span>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
